@@ -6,16 +6,16 @@ const Food = require('./food');
 
 require('dotenv').config();
 
-const POSTGRES_URL = process.env.DATABASE_URL === 'test' ? 'sqlite:memory:' : process.env.DATABASE_URL;
-let sequelizeOptions = process.env.DATABASE_URL === 'production' ? {
-    dialectOptions: {
+const POSTGRES_URL = process.env.DATABASE_URL;
+
+let sequelizeOptions =  {
+dialectOptions: {
         ssl: {
             require: true,
             rejectUnauthorized: false,
         }
-    }
-} : {};
-
+        }
+}
 let sequelize = new Sequelize(POSTGRES_URL,sequelizeOptions);
 
 module.exports = {
