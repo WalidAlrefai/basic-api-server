@@ -13,6 +13,6 @@ we make basic api server , after made database
 
 [new pull request](https://github.com/WalidAlrefai/basic-api-server/pull/2)
 
-[Action Link dev](https://github.com/WalidAlrefai/basic-api-server/actions/runs/1916936716)
+[Action Link](https://github.com/WalidAlrefai/basic-api-server/actions)
 
-[Merge pull request #2 ](https://github.com/WalidAlrefai/basic-api-server/actions/runs/1916945558)
+
